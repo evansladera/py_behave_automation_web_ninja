@@ -1,0 +1,10 @@
+{
+  "user_valid_credentials": {
+    "email": "evans@gmail.com",
+    "password": "123456"
+  },
+  "user_invalid_credentials": {
+    "email": "evanstest@gmail.com",
+    "password": "654321"
+  }
+}
