@@ -1,9 +1,9 @@
 import time
+from behave import use_fixture, fixture
 
 from selenium import webdriver
-from behave import use_fixture, fixture
 from selenium.webdriver.chrome.options import Options
-from page_objects.home_page import HomePage
+
 
 BEHAVE_TIMEOUT = 60
 

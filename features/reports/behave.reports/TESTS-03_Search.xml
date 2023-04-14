@@ -1,0 +1,37 @@
+<testsuite name="03_Search.Search functionality" tests="3" errors="0" failures="0" skipped="0" time="0.00698" timestamp="2023-04-14T13:31:52.449346" hostname="DESKTOP-MDP0JKF"><testcase classname="03_Search.Search functionality" name="User searches for a valid product" status="passed" time="0.002001"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: User searches for a valid product
+    Given User opens the Application ... passed in 0.000s
+    When User enters valid product "HP" into Search box field ... passed in 0.001s
+    And User clicks on Search button ... passed in 0.000s
+    Then User should get valid product displayed in search results ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="03_Search.Search functionality" name="User searches for an invalid product" status="passed" time="0.00299"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: User searches for an invalid product
+    Given User opens the Application ... passed in 0.001s
+    When User enters invalid product "Honda" into Search box field ... passed in 0.001s
+    And User clicks on Search button ... passed in 0.000s
+    Then User should get a message about no product matching ... passed in 0.001s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="03_Search.Search functionality" name="User searches without any product" status="passed" time="0.001989"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: User searches without any product
+    Given User opens the Application ... passed in 0.001s
+    When User dont enter any product name into Search box field ... passed in 0.001s
+    And User clicks on Search button ... passed in 0.000s
+    Then User should get a message about no product matching ... passed in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

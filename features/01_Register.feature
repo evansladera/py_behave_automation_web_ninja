@@ -15,8 +15,7 @@ Feature: Registration functionality
     Given User navigates to Register Account page
     When User enters the details into below fields
       | firstName | lastName | email           | telephone  | password |
-#      | Evans     | Ladera   | evans@gmail.com | 1234567890 | 123456   |
-      | Ev@ns     | L@dera   | ev@ns@gmail.com | 1234567890 | 123456   |
+      | Evans     | Ladera   | evans@gmail.com | 1234567890 | 123456   |
     And User selects Privacy Policy
     And User clicks on Continue button
     Then User account should get created successfully
