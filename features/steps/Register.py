@@ -8,7 +8,10 @@ use_step_matcher('parse')
 
 @given(u'User navigates to Register Account page')
 def step_impl(context):
-    pass
+    context.browser.get(HomePage.url_home_page)
+    context.home_page = HomePage(context.browser)
+    context.home_page.my_account_drop_menu()
+    context.home_page.select_register()
 
 
 @when(u'User enters the details into below fields')
@@ -49,5 +52,3 @@ def step_impl(context):
 @then(u'User should get proper warning messages for every mandatory field')
 def step_impl(context):
     pass
-
-
