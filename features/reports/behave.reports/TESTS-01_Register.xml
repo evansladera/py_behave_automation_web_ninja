@@ -1,66 +1,66 @@
-<testsuite name="01_Register.Registration functionality" tests="4" errors="0" failures="0" skipped="0" time="0.016005" timestamp="2023-04-14T13:30:03.760804" hostname="DESKTOP-MDP0JKF"><testcase classname="01_Register.Registration functionality" name="User creates an account without filling any details" status="passed" time="0.005008"><system-out>
+<testsuite name="01_Register.Registration functionality" tests="4" errors="0" failures="0" skipped="0" time="21.954" timestamp="2023-04-18T09:50:11.111446" hostname="DESKTOP-MDP0JKF"><testcase classname="01_Register.Registration functionality" name="User creates an account without filling any details" status="passed" time="0.0"><system-out>
 <![CDATA[
 @scenario.begin
 
   @registration_empty_fields
   Scenario: User creates an account without filling any details
     Given User navigates to Register Account page ... passed in 0.000s
-    When User dont enter any details into fields ... passed in 0.005s
+    When User dont enter any details into fields ... passed in 0.000s
     And User clicks on Continue button ... passed in 0.000s
     Then User should get proper warning messages for every mandatory field ... passed in 0.000s
 
 @scenario.end
 --------------------------------------------------------------------------------
 ]]>
-</system-out></testcase><testcase classname="01_Register.Registration functionality" name="User creates an account only with mandatory fields" status="passed" time="0.005001"><system-out>
+</system-out></testcase><testcase classname="01_Register.Registration functionality" name="User creates an account only with mandatory fields" status="passed" time="0.0"><system-out>
 <![CDATA[
 @scenario.begin
 
   @registration_mandatory_fields
   Scenario: User creates an account only with mandatory fields
-    Given User navigates to Register Account page ... passed in 0.001s
-    When User enters the details into below fields ... passed in 0.001s
+    Given User navigates to Register Account page ... passed in 0.000s
+    When User enters the details into below fields ... passed in 0.000s
       | firstName | lastName | email           | telephone  | password |
       | Evans     | Ladera   | evans@gmail.com | 1234567890 | 123456   |
-    And User selects Privacy Policy ... passed in 0.001s
-    And User clicks on Continue button ... passed in 0.001s
-    Then User account should get created successfully ... passed in 0.001s
+    And User selects Privacy Policy ... passed in 0.000s
+    And User clicks on Continue button ... passed in 0.000s
+    Then User account should get created successfully ... passed in 0.000s
 
 @scenario.end
 --------------------------------------------------------------------------------
 ]]>
-</system-out></testcase><testcase classname="01_Register.Registration functionality" name="User creates an account with all fields" status="passed" time="0.003997"><system-out>
+</system-out></testcase><testcase classname="01_Register.Registration functionality" name="User creates an account with all fields" status="passed" time="12.029325"><system-out>
 <![CDATA[
 @scenario.begin
 
   @registration_all_fields
   Scenario: User creates an account with all fields
     Given User navigates to Register Account page ... passed in 0.000s
-    When User enters the details into below fields ... passed in 0.001s
+    When User enters the details into below fields ... passed in 0.000s
       | firstName | lastName  | email            | telephone  | password |
       | Johary    | Hernandez | johary@gmail.com | 1234567890 | 123456   |
-    And User selects Yes for Newsletter ... passed in 0.001s
-    And User selects Privacy Policy ... passed in 0.001s
+    And User selects Yes for Newsletter ... passed in 12.028s
+    And User selects Privacy Policy ... passed in 0.000s
     And User clicks on Continue button ... passed in 0.001s
     Then User account should get created successfully ... passed in 0.000s
 
 @scenario.end
 --------------------------------------------------------------------------------
 ]]>
-</system-out></testcase><testcase classname="01_Register.Registration functionality" name="User creates a duplicate account" status="passed" time="0.001999"><system-out>
+</system-out></testcase><testcase classname="01_Register.Registration functionality" name="User creates a duplicate account" status="passed" time="9.924675"><system-out>
 <![CDATA[
 @scenario.begin
 
   @registration_duplicate_account
   Scenario: User creates a duplicate account
-    Given User navigates to Register Account page ... passed in 0.001s
+    Given User navigates to Register Account page ... passed in 0.000s
     When User enters the details into below fields ... passed in 0.000s
       | firstName | lastName  | email           | telephone  | password |
       | Johary    | Hernandez | evans@gmail.com | 1234567890 | 123456   |
-    And User selects Yes for Newsletter ... passed in 0.001s
+    And User selects Yes for Newsletter ... passed in 9.924s
     And User selects Privacy Policy ... passed in 0.000s
     And User clicks on Continue button ... passed in 0.000s
-    Then User should get a proper warning about duplicate email ... passed in 0.000s
+    Then User should get a proper warning about duplicate email ... passed in 0.001s
 
 @scenario.end
 --------------------------------------------------------------------------------
